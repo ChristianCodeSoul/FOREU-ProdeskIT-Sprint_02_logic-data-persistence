@@ -1,0 +1,423 @@
+{
+  "meta": {
+    "title": "FOREU | Engineering the future of Global Enterprises",
+    "description": "FOREU: Engineering the future of global enterprises through Cloud-Native Architecture, AI-Driven Automation, and Custom Software Solutions."
+  },
+  "brandName": "FOREU",
+  "social": {
+    "whatsapp": {
+      "label": "WhatsApp Chat",
+      "href": "https://wa.me/918851407750"
+    },
+    "linkedin": {
+      "label": "LinkedIn Profile",
+      "href": "https://www.linkedin.com/company/prodesk-it"
+    }
+  },
+  "assets": {
+    "themeImageLight": "images/integration-graphic.webp",
+    "themeImageDark": "images/integration-graphic_two.webp"
+  },
+  "theme": {
+    "selectorAria": "Theme Selector",
+    "buttons": {
+      "dark": "Active Dark Mode",
+      "grey": "Active Slate Grey Mode",
+      "light": "Active Light Mode"
+    },
+    "validThemes": [
+      "dark",
+      "grey",
+      "light"
+    ],
+    "legacyKeys": [
+      "foreu-theme",
+      "prodesk-theme"
+    ],
+    "default": "dark",
+    "themeColor": {
+      "dark": "#090d16",
+      "grey" : "#1b202b",
+      "light" : "#ffffff"
+    }
+  },
+  "nav": {
+    "menuToggleAria": "Toggle Navigation Menu",
+    "items": [
+      {
+        "label": "Home",
+        "href": "#solutions"
+      },
+      {
+        "label": "Expertise",
+        "href": "#features"
+      },
+      {
+        "label": "Services",
+        "href": "#services"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ]
+  },
+  "hero": {
+    "svgAriaLabel": "FOREU Infrastructure Diagram",
+    "titlePrefix": "Engineering the future of",
+    "words": [
+      "Global Enterprises",
+      "Digital Ecosystem",
+      "Future Startups",
+      "Cloud Networks"
+    ],
+    "subtitle": "We build secure, scalable, and intelligent software solutions that help businesses innovate faster through cloud technologies, AI, and modern web development.",
+    "actions": {
+      "primary": {
+        "label": "Get Started",
+        "href": "#contact",
+        "ariaLabel": "Start Your Transformation"
+      },
+      "secondary": {
+        "label": "Explore more",
+        "href": "#features",
+        "ariaLabel": "View Engineering Expertise"
+      }
+    },
+    "diagrams": [
+      {
+        "node1": [
+          50,
+          40,
+          180,
+          120,
+          "0.15"
+        ],
+        "node2": [
+          220,
+          100,
+          220,
+          140,
+          "0.15"
+        ],
+        "node3": [
+          140,
+          100,
+          25
+        ],
+        "connector": [
+          "M120 220 L 260 160",
+          "4 4"
+        ]
+      },
+      {
+        "node1": [
+          30,
+          100,
+          200,
+          120,
+          "0.35"
+        ],
+        "node2": [
+          240,
+          40,
+          190,
+          120,
+          "0.25"
+        ],
+        "node3": [
+          210,
+          160,
+          30
+        ],
+        "connector": [
+          "M90 90 L 310 210",
+          "6 4"
+        ]
+      },
+      {
+        "node1": [
+          100,
+          30,
+          180,
+          110,
+          "0.25"
+        ],
+        "node2": [
+          70,
+          140,
+          250,
+          120,
+          "0.40"
+        ],
+        "node3": [
+          310,
+          90,
+          22
+        ],
+        "connector": [
+          "M190 120 L 170 220",
+          "2 6"
+        ]
+      },
+      {
+        "node1": [
+          60,
+          60,
+          170,
+          150,
+          "0.15"
+        ],
+        "node2": [
+          210,
+          50,
+          190,
+          170,
+          "0.15"
+        ],
+        "node3": [
+          150,
+          150,
+          35
+        ],
+        "connector": [
+          "M110 190 L 290 210",
+          "0 0"
+        ]
+      }
+    ]
+  },
+  "servicesIntro": {
+    "eyebrow": "What we Build",
+    "title": "Services & Core Capabilities",
+    "description": "From advanced digital experiences to scalable infrastructure, technology ecosystems designed to move business forward."
+  },
+  "services": [
+    {
+      "number": "01",
+      "title": "Services",
+      "items": [
+        {
+          "title": "Next-Gen Web, Design and Digital Marketing",
+          "description": "Modern web experience, creative design, and digital strategies built to strengthen your online presence.",
+          "image": "images/Next-Gen.webp",
+          "alt": "Next-Gen Web, Design and Digital Marketing"
+        },
+        {
+          "title": "Custom Software and Application Engineering",
+          "description": "Purpose-built software and applications engineered around your business requirements and workflows.",
+          "image": "images/Custom.webp",
+          "alt": "Custom Software and Application Engineering"
+        },
+        {
+          "title": "Infrastructure, Cloud and Cybersecurity",
+          "description": "Secure and scalable infrastructure designed for reliable cloud operations and modern business.",
+          "image": "images/Cloud.webp",
+          "alt": "Infrastructure, Cloud and Cybersecurity"
+        },
+        {
+          "title": "Future Tech and Business Intelligence",
+          "description": "Intelligent technology and data-driven solutions that help businesses make smarter decisions.",
+          "image": "images/Business.webp",
+          "alt": "Future Tech and Business Intelligence"
+        }
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Core Capabilities",
+      "items": [
+        {
+          "title": "IT Infrastructure Setup",
+          "description": "Reliable technology infrastructure designed to support modern digital operations.",
+          "image": "images/Infrastructure.webp",
+          "alt": "IT Infrastructure Setup"
+        },
+        {
+          "title": "Digital Marketing Execution",
+          "description": "Data-informed digital campaigns focused on visibility, engagement, and measurable growth.",
+          "image": "images/Digital.webp",
+          "alt": "Digital Marketing Execution"
+        },
+        {
+          "title": "API and CRM Integration",
+          "description": "Connected systems and streamlined integrations that keep business data moving efficiently.",
+          "image": "images/CRM.webp",
+          "alt": "API and CRM Integration"
+        },
+        {
+          "title": "Performance Optimization",
+          "description": "Continuous optimization focused on speed, efficiency, scalability, and user experience.",
+          "image": "images/Performance.webp",
+          "alt": "Performance Optimization"
+        }
+      ]
+    }
+  ],
+  "features": {
+    "title": "Precision Engineering & Global Scale",
+    "cards": [
+      {
+        "title": "Precision Architecture",
+        "description": "Every solution is designed with clean architecture, maintainable code, and scalable infrastructure to ensure long-term performance and reliability.",
+        "image": "images/Precision Architecture.webp"
+      },
+      {
+        "title": "Global Scalability",
+        "description": "Our cloud-native solutions are designed to scale with your business, delivering reliable performance for teams and users around the world.",
+        "image": "images/Global scalability.webp"
+      },
+      {
+        "title": "Intelligent Future",
+        "description": "Engineering adaptive ecosystems powered by AI and data analytics, enabling smarter decisions, continuous optimization, and sustainable growth.",
+        "image": "images/Intelligent Future.webp"
+      }
+    ]
+  },
+  "contact": {
+    "badge": "Let's Build Something Extraordinary",
+    "title": "Get in Touch with FOREU",
+    "description": "Ready to transform your enterprise? Connect with our strategists through our direct channels or drop a message below.",
+    "submitLabel": "Submit"
+  },
+  "form": {
+    "labels": {
+      "email": "Business Email",
+      "phone": "Phone Number",
+      "message": "Your Message"
+    },
+    "placeholders": {
+      "email": "Enter your business email",
+      "phone": "Enter your Phone Number",
+      "message": "Type your message"
+    },
+    "aria": {
+      "email": "Enter your business email address",
+      "phone": "Enter your Phone Number",
+      "message": "Type your Message"
+    },
+    "submitAria": "Submit form to start transformation"
+  },
+  "messages": {
+    "contactThanks": "Thank you!! The FOREU team will contact you shortly.",
+    "popupOK": "OK",
+    "retry": "Retry"
+  },
+  "logos": {
+    "aria": "Foreu Homepage",
+    "altHeader": "Foreu Logo",
+    "altFooter": "Foreu logo"
+  },
+  "footer": {
+    "brandDescription": "Engineering the Future of Global Enterprises through custom software, cloud solutions, and AI-driven automation.",
+    "copyrightSuffix": "All rights reserved.",
+    "columns": [
+      {
+        "heading": "Solutions",
+        "items": [
+          {
+            "label": "custom Software",
+            "href": "#solutions"
+          },
+          {
+            "label": "Cloud Services",
+            "href": "#solutions"
+          },
+          {
+            "label": "Digital Transformation",
+            "href": "#solutions"
+          }
+        ]
+      },
+      {
+        "heading": "Services",
+        "items": [
+          {
+            "label": "Next-Gen Web, Design & Digital Marketing",
+            "href": "#services"
+          },
+          {
+            "label": "Custom Software & Application Engineering",
+            "href": "#services"
+          },
+          {
+            "label": "Infrastructure, Cloud & Cybersecurity",
+            "href": "#services"
+          },
+          {
+            "label": "Future Tech & Business Intelligence",
+            "href": "#services"
+          }
+        ]
+      },
+      {
+        "heading": "Expertise",
+        "items": [
+          {
+            "label": "Precision Architecture",
+            "href": "#features"
+          },
+          {
+            "label": "Global Scalability",
+            "href": "#features"
+          },
+          {
+            "label": "Intelligent Future",
+            "href": "#features"
+          }
+        ]
+      },
+      {
+        "heading": "Core Capabilities",
+        "items": [
+          {
+            "label": "IT Infrastructure Setup",
+            "href": "#services"
+          },
+          {
+            "label": "Digital Marketing Execution",
+            "href": "#services"
+          },
+          {
+            "label": "API and CRM Integration",
+            "href": "#services"
+          },
+          {
+            "label": "Performance Optimization",
+            "href": "#services"
+          }
+        ]
+      },
+      {
+        "heading": "Contact Info",
+        "items": [
+          {
+            "label": "Sector A, Noida, UP"
+          },
+          {
+            "label": "+91 88514 07750",
+            "href": "tel:8851407750"
+          },
+          {
+            "label": "inf@prodesk.in",
+            "href": "mailto:info@prodesk.in"
+          }
+        ]
+      },
+      {
+        "heading": "working hours",
+        "items": [
+          {
+            "label": "Monday to Sunday | 9:30 AM - 6:00 PM "
+          },
+          {
+            "label": "Saturday - By Appointment"
+          },
+          {
+            "label": "Sunday - Closed"
+          }
+        ]
+      }
+    ]
+  }
+}
