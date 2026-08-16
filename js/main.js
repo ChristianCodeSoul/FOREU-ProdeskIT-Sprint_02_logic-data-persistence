@@ -369,7 +369,10 @@
     bindEvents() {
         this.on(
             'theme:change',
-            theme => this.applyTheme(theme)
+            theme => {
+                console.log('[EventBus] Received:', 'theme:change', theme);
+                this.applyTheme(theme);
+            }
         );
         this.on(
             'hero:change',
@@ -387,6 +390,7 @@
             this.listen(button, 'click', () => {
                 const theme = button.dataset.setTheme;
                 if (THEMES.has(theme)) {
+                    console.log('[EventBus] Emitting:', 'theme:change', theme);
                     this.events.emit('theme:change', theme);
                 }
             });
