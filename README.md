@@ -1,51 +1,56 @@
-Sprint 02 — Logic & Data Persistence
+# Sprint 02 — Logic & Data Persistence
 
-This workspace implements the Sprint 2 requirements (Phase 1—3). Review below for evidence and how to test.
+This workspace implements the Sprint 2 requirements (Phase 1–3). Review below for evidence and how to test.
 
-Phase coverage
+## Phase Coverage
 
-- Phase 1: State Injection & DOM Manipulation
-  - The landing page is hydrated from `js/main.js` `SITE_DATA` constant. Elements updated via `textContent` and `src` assignments in `hydrateContent()`.
-  - State mutations happen through the `ForeuApp` methods and the `EventBus` (`hero:change`, `theme:change`, `toast:show`).
+- **Phase 1: State Injection & DOM Manipulation**
+  - The landing page is hydrated from the `SITE_DATA` constant in `js/main.js`. Elements are updated using `textContent` and `src` assignments in `hydrateContent()`.
+  - State mutations happen through `ForeuApp` methods and the `EventBus` (`hero:change`, `theme:change`, `toast:show`).
 
-- Phase 2: Local Storage & Session Persistence
-  - Application state is serialized to `localStorage` under key `foreu-site-state` via `persistState()`.
-  - Theme pre-paint script in `index.html` applies the saved theme before stylesheet loads to prevent flicker.
-  - `beforeunload` handler persists state as a safeguard.
+- **Phase 2: Local Storage & Session Persistence**
+  - Application state is serialized to `localStorage` under the `foreu-site-state` key via `persistState()`.
+  - The pre-paint theme script in `index.html` applies the saved theme before the stylesheet loads to prevent flicker.
+  - A `beforeunload` handler persists state as an additional safeguard.
 
-- Phase 3: Memory Leak Prevention & Custom Event Emitters
+- **Phase 3: Memory Leak Prevention & Custom Event Emitters**
   - A custom `EventBus` (PubSub) is implemented in `js/pubsub.js` and exposed as `window.EventBus` / `window.PubSub`.
-  - All DOM listeners are registered via `ForeuApp.listen()` which records cleanup closures; `destroy()` runs these cleanup functions and calls `events.clear()` to remove subscriptions.
-  - To produce a Heap Snapshot: open Chrome DevTools → Memory tab → Take snapshot before and after exercising the UI and compare allocations. See instructions below.
+  - DOM listeners are registered via `ForeuApp.listen()`, which records cleanup closures. `destroy()` runs these cleanup functions and calls `events.clear()` to remove subscriptions.
+  - Heap Snapshots can be taken using Chrome DevTools → Memory → Heap Snapshot before and after exercising the UI to compare memory usage and retained objects.
 
-How to run / test quickly
+## How to Run / Test Quickly
 
-1. Open `index.html` in a browser (prefer Chrome for DevTools heap snapshots).
+1. Open `index.html` in a browser (Chrome is recommended for DevTools heap snapshots).
 2. Verify theme persistence:
-   - Toggle themes in header.
-   - Reload the page — the selected theme should persist with no visual flicker.
-3. Check hero rotation: the dynamic word and SVG diagram rotate every ~3.2s.
-4. Verify features cards are rendered from `SITE_DATA` and display in a single horizontal row on desktop; shrink screen to see responsive layout.
-5. Cursor: move pointer to see smooth trailing ring and interactive enlargement over interactive elements.
-6. Check `localStorage` in DevTools Application tab -> `foreu-site-state` key to confirm persisted state.
+   - Toggle themes in the header.
+   - Reload the page — the selected theme should persist without visual flicker.
+3. Check hero rotation: the dynamic word and SVG diagram rotate every ~3.2 seconds.
+4. Verify feature cards are rendered from `SITE_DATA` and display in a single horizontal row on desktop; resize the screen to check the responsive layout.
+5. Move the pointer to test the cursor trailing ring and interactive enlargement.
+6. Check `localStorage` in DevTools → Application → `foreu-site-state` to confirm persisted state.
 
-Heap snapshot instructions
+## Heap Snapshot Instructions
 
-1. Open Chrome and the page.
-2. Open DevTools (F12) → Memory tab.
-3. Click "Take snapshot" before interacting with the page.
-4. Interact with the app (toggle themes, open menu, submit contact form, navigate) for ~30s.
-5. Take another snapshot and compare — look for detached nodes or growing retained sizes for repeated actions.
+1. Open the deployed page in Chrome.
+2. Open DevTools (F12) → **Memory**.
+3. Select **Heap Snapshot** and take the first snapshot.
+4. Interact with the app for around 30 seconds:
+   - Toggle themes.
+   - Open and close the navigation menu.
+   - Trigger UI interactions.
+   - Submit the contact form.
+5. Take a second heap snapshot.
+6. Compare the snapshots for detached DOM nodes, retained objects, or significant unexplained memory growth.
 
-Files changed / added
+## Files Changed / Added
 
-- css/style.css — layout and responsiveness fixes, features heading centering, 3-column grid on desktop.
-- js/pubsub.js — PubSub/EventBus implementation (Phase 3).
-- js/main.js — use PubSub, theme handling, cursor robustness, persistence safeguards, code cleanups.
-- index.html — pre-paint theme script hardened, nav updated with Services link, footer contact updated.
-- README.md — this file.
+- `css/style.css` — layout and responsiveness fixes, features heading centering, 3-column grid on desktop.
+- `js/pubsub.js` — PubSub/EventBus implementation (Phase 3).
+- `js/main.js` — PubSub integration, theme handling, cursor robustness, persistence safeguards, and code cleanups.
+- `index.html` — pre-paint theme script hardening, navigation updates, and footer contact updates.
+- `README.md` — Sprint 02 documentation.
 
-If you want, I can now:
-- Run a step-by-step test script (headless browser harness) to verify behaviors automatically.
-- Add a small `test/` harness and a reproducible script to capture heap snapshots programmatically.
+## Live Deployment
 
+**Vercel:**  
+https://foreu-prodesk-it-sprint-02-logic-da.vercel.app/
